@@ -1,3 +1,9 @@
 .bar-spacer {
   flex: 1 1 auto;
 }
+.sticky-bar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+}
