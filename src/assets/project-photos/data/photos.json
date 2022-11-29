@@ -1,0 +1,28 @@
+{
+  "data":[
+    {
+      "previewImageSrc": "assets/project-photos/images/bath1.jpg",
+      "thumbnailImageSrc": "assets/project-photos/images/bath1.jpg",
+      "alt": "TBD",
+      "title": "TBD"
+    },
+    {
+      "previewImageSrc": "assets/project-photos/images/bath2.jpg",
+      "thumbnailImageSrc": "assets/project-photos/images/bath2.jpg",
+      "alt": "TBD",
+      "title": "TBD"
+    },
+    {
+      "previewImageSrc": "assets/project-photos/images/bath3.jpg",
+      "thumbnailImageSrc": "assets/project-photos/images/bath3.jpg",
+      "alt": "TBD",
+      "title": "TBD"
+    },
+    {
+      "previewImageSrc": "assets/project-photos/images/bath4.jpg",
+      "thumbnailImageSrc": "assets/project-photos/images/bath4.jpg",
+      "alt": "TBD",
+      "title": "TBD"
+    }
+  ]
+}

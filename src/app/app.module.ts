@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { MatButtonModule } from '@angular/material/button'
@@ -10,6 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 import { ButtonModule } from 'primeng/button';
 import { ToolbarModule } from 'primeng/toolbar';
 import { CardModule } from 'primeng/card';
+import { GalleriaModule } from 'primeng/galleria';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +28,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ScrollAnchorDirective } from './scroll-anchor.directive';
 import { ScrollManagerDirective } from './scroll-manager.directive';
 import { ScrollSectionDirective } from './scroll-section.directive';
+import { PhotoService } from './services/photo.service';
 
 @NgModule({
   declarations: [
@@ -43,6 +46,7 @@ import { ScrollSectionDirective } from './scroll-section.directive';
     ScrollSectionDirective
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
@@ -54,9 +58,10 @@ import { ScrollSectionDirective } from './scroll-section.directive';
     MatCardModule,
     ButtonModule,
     ToolbarModule,
-    CardModule
+    CardModule,
+    GalleriaModule
   ],
-  providers: [],
+  providers: [PhotoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
