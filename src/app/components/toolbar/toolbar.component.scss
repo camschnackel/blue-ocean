@@ -1,9 +1,13 @@
-.bar-spacer {
-  flex: 1 1 auto;
-}
+// .bar-spacer {
+//   flex: 1 1 auto;
+// }
 .sticky-bar {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
   z-index: 1000;
 }
+
+// :host ::ng-deep .secondary-toolbar.p-toolbar {
+//   background: var(--accent-color);
+// }

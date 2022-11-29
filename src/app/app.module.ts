@@ -7,6 +7,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 
+import { ButtonModule } from 'primeng/button';
+import { ToolbarModule } from 'primeng/toolbar';
+import { CardModule } from 'primeng/card';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -47,7 +51,10 @@ import { ScrollSectionDirective } from './scroll-section.directive';
     MatToolbarModule,
     MatGridListModule,
     MatTabsModule,
-    MatCardModule
+    MatCardModule,
+    ButtonModule,
+    ToolbarModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

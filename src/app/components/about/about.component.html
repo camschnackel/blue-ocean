@@ -1,8 +1,15 @@
-<mat-card>
+<!-- <mat-card>
   <mat-card-header>
     <mat-card-title><h1 class="mat-headline-2" appScrollSection="one">About</h1></mat-card-title>
   </mat-card-header>
   <mat-card-content>
     <p>{{about}}</p>
   </mat-card-content>
-</mat-card>
+</mat-card> -->
+
+<p-card header="About" styleClass="p-card-shadow" appScrollSection="one">
+    <ng-template pTemplate="header">
+        <img alt="Card" class="aboutImage" src="{{headerImg}}">
+    </ng-template>
+    <p>{{about}}</p>
+</p-card>
