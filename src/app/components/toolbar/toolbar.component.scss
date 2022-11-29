@@ -6,6 +6,8 @@
   position: -webkit-sticky;
   top: 0;
   z-index: 1000;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 }
 
 // :host ::ng-deep .secondary-toolbar.p-toolbar {

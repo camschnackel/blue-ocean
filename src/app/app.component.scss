@@ -8,6 +8,29 @@
 // // The "warn" palette is optional and defaults to red if not specified.
 // $my-warn: mat.define-palette(mat.$red-palette);
 
-h1 {
-  color: red;
+.content {
+  /* this is needed or the background will be offset by a few pixels at the top */
+  overflow: auto;
+  position: relative;
+}
+
+.content::before {
+  content: "";
+  position: fixed;
+  top: -5%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url('../assets/stock-images/matt-paul-catalano-0QEG_xOoY7Y-unsplash.jpg');
+  background-size:cover;
+  width: 110%;
+  height: 110%;
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
