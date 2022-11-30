@@ -14,8 +14,11 @@
   background: var(--cyan-800);
   border: 0;
   border-radius: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .p-button.p-button-text {
   color: white;
+  font-size: 1.25rem;
 }
