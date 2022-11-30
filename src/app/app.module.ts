@@ -31,6 +31,7 @@ import { ScrollAnchorDirective } from './scroll-anchor.directive';
 import { ScrollManagerDirective } from './scroll-manager.directive';
 import { ScrollSectionDirective } from './scroll-section.directive';
 import { PhotoService } from './services/photo.service';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { PhotoService } from './services/photo.service';
     ContactComponent,
     ScrollAnchorDirective,
     ScrollManagerDirective,
-    ScrollSectionDirective
+    ScrollSectionDirective,
+    FooterComponent
   ],
   imports: [
     HttpClientModule,

@@ -1,4 +1,7 @@
-<p-card appScrollSection="two" styleClass="p-card-shadow" class="my-4 block" header="Projects">
+<p-card styleClass="p-card-shadow" class="my-4 block" header="Projects">
+  <div style="position: relative;">
+    <div appScrollSection="two" style="position: absolute; top: -180px; left: 0"></div>
+  </div>
   <div class="grid">
     <div class="col-4" *ngFor="let project of projectImages;  let i = index">
       <p-image [src]="project.thumbnailImageSrc" alt="Image" width="100%" [preview]="true"></p-image>
