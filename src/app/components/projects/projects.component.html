@@ -1,13 +1,74 @@
-<p-card appScrollSection="two" styleClass="p-card-shadow" class="my-4 block" header="header">
-  <p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="5"
-    [showThumbnails]="false" [showIndicators]="true"> 
-    <ng-template pTemplate="item" let-item>
-        <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
-    </ng-template>
-    <ng-template pTemplate="thumbnail" let-item>
-        <div class="grid grid-nogutter justify-content-center">
+<p-card appScrollSection="two" styleClass="p-card-shadow" class="my-4 block" header="Projects">
+  <div class="grid">
+    <div class="col-6">
+      <p-galleria [value]="bathImages" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}"
+        [numVisible]="5" [showThumbnails]="false" [showIndicators]="false" [autoPlay]="true" [circular]="true"
+        [transitionInterval]="5000">
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
             <img [src]="item.thumbnailImageSrc" style="display: block;" />
-        </div>
-    </ng-template>
-</p-galleria>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="caption" let-item>
+          <h4 style="margin-top: 0rem; margin-bottom: 0rem; color: #ffffff;">Bathrooms</h4> 
+        </ng-template>
+      </p-galleria>
+    </div>
+    <div class="col-6">
+      <p-galleria [value]="kitchenImages" [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{'max-width': '640px'}" [numVisible]="5" [showThumbnails]="false" [showIndicators]="false"
+        [autoPlay]="true" [circular]="true" [transitionInterval]="5000">
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block;" />
+          </div>
+        </ng-template>
+        <ng-template pTemplate="caption" let-item>
+          <h4 style="margin-top: 0rem; margin-bottom: 0rem; color: #ffffff;">Kitchens</h4>
+        </ng-template>
+      </p-galleria>
+    </div>
+    <div class="col-6">
+      <p-galleria [value]="houseImages" [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{'max-width': '640px'}" [numVisible]="5" [showThumbnails]="false" [showIndicators]="false"
+        [autoPlay]="true" [circular]="true" [transitionInterval]="5000">
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block;" />
+          </div>
+        </ng-template>
+        <ng-template pTemplate="caption" let-item>
+          <h4 style="margin-top: 0rem; margin-bottom: 0rem; color: #ffffff;">House Flipping</h4>
+        </ng-template>
+      </p-galleria>
+    </div>
+    <div class="col-6">
+      <p-galleria [value]="patioImages" [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{'max-width': '640px'}" [numVisible]="5" [showThumbnails]="false" [showIndicators]="false"
+        [autoPlay]="true" [circular]="true" [transitionInterval]="5000">
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block;" />
+          </div>
+        </ng-template>
+        <ng-template pTemplate="caption" let-item>
+          <h4 style="margin-top: 0rem; margin-bottom: 0rem; color: #ffffff;">Patios</h4>
+        </ng-template>
+      </p-galleria>
+    </div>
+  </div>
 </p-card>
+
+<!-- {{item.title}} -->

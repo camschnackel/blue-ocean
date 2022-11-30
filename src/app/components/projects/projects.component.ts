@@ -7,7 +7,10 @@ import { PhotoService } from '../../services/photo.service';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
-  images: any[];
+  bathImages: any[];
+  kitchenImages: any[];
+  houseImages: any[];
+  patioImages: any[];
 
   responsiveOptions: any[] = [
     {
@@ -27,8 +30,17 @@ export class ProjectsComponent {
   constructor(private photoService: PhotoService) { }
 
   ngOnInit() {
-    this.photoService.getImages().then(images => {
-      this.images = images
+    this.photoService.getBathImages().then(images => {
+      this.bathImages = images
+    })
+    this.photoService.getKitchenImages().then(images => {
+      this.kitchenImages = images
+    })
+    this.photoService.getHouseImages().then(images => {
+      this.houseImages = images
+    })
+    this.photoService.getPatioImages().then(images => {
+      this.patioImages = images
     })
   }
 }

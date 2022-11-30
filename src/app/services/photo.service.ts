@@ -7,9 +7,39 @@ import { Image } from '../image';
 export class PhotoService {
   constructor(private http: HttpClient) { }
 
-  getImages() {
+  getBathImages() {
     return this.http
-      .get<any>('assets/project-photos/data/photos.json')
+      .get<any>('assets/project-photos/data/bath-photos.json')
+      .toPromise()
+      .then((res) => <Image[]>res.data)
+      .then((data) => {
+        return data;
+      });
+  }
+
+  getKitchenImages() {
+    return this.http
+      .get<any>('assets/project-photos/data/kitchen-photos.json')
+      .toPromise()
+      .then((res) => <Image[]>res.data)
+      .then((data) => {
+        return data;
+      });
+  }
+
+  getHouseImages() {
+    return this.http
+      .get<any>('assets/project-photos/data/house-photos.json')
+      .toPromise()
+      .then((res) => <Image[]>res.data)
+      .then((data) => {
+        return data;
+      });
+  }
+
+  getPatioImages() {
+    return this.http
+      .get<any>('assets/project-photos/data/patio-photos.json')
       .toPromise()
       .then((res) => <Image[]>res.data)
       .then((data) => {
