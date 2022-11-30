@@ -8,7 +8,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 
+import { StyleClassModule } from 'primeng/styleclass';
 import { ButtonModule } from 'primeng/button';
+import { ImageModule } from 'primeng/image';
 import { ToolbarModule } from 'primeng/toolbar';
 import { CardModule } from 'primeng/card';
 import { GalleriaModule } from 'primeng/galleria';
@@ -56,7 +58,9 @@ import { PhotoService } from './services/photo.service';
     MatGridListModule,
     MatTabsModule,
     MatCardModule,
+    StyleClassModule,
     ButtonModule,
+    ImageModule,
     ToolbarModule,
     CardModule,
     GalleriaModule

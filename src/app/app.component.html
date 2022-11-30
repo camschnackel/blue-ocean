@@ -2,14 +2,16 @@
   <section appScrollManager>
     <app-toolbar></app-toolbar>
     <div class="background-image"></div>
-    <main class="content grid">
+    <main class="content">
+      <app-about></app-about>
+      <div class="grid">
       <div class="xl:col-3 lg:col-2 md:col-1 sm:col-1"></div>
       <div class="xl:col-6 lg:col-8 md:col-10 sm:col-10">
-        <app-about></app-about>
         <app-projects></app-projects>
         <app-contact></app-contact>
       </div>
       <div class="xl:col-3 lg:col-2 md:col-1 sm:col-1"></div>
+      </div>
     </main>
   </section>
 </div>

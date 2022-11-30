@@ -10,6 +10,12 @@
   backdrop-filter: blur(12px);
 }
 
-// :host ::ng-deep .secondary-toolbar.p-toolbar {
-//   background: var(--accent-color);
-// }
+:host ::ng-deep .secondary-toolbar.p-toolbar {
+  background: var(--cyan-800);
+  border: 0;
+  border-radius: 0;
+}
+
+.p-button.p-button-text {
+  color: white;
+}

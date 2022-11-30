@@ -34,3 +34,7 @@
   -ms-filter: blur(5px);
   filter: blur(5px);
 }
+
+:host ::ng-deep .txt-primary {
+  color: var(--cyan-800);
+}

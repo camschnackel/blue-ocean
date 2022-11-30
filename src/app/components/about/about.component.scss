@@ -2,6 +2,11 @@
   height: 350px;
   object-fit: cover;
 }
+
+:host ::ng-deep .txt-primary {
+  color: var(--cyan-800);
+}
+
 // .pageMargins {
 //   margin: 0 15%;
 //   display: block;

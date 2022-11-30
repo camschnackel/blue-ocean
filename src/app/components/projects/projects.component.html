@@ -1,6 +1,11 @@
 <p-card appScrollSection="two" styleClass="p-card-shadow" class="my-4 block" header="Projects">
   <div class="grid">
-    <div class="col-6">
+    <div class="col-4" *ngFor="let project of projectImages;  let i = index">
+      <p-image [src]="project.thumbnailImageSrc" alt="Image" width="100%" [preview]="true"></p-image>
+    </div>
+  </div>
+</p-card>
+<!-- <div class="col-6">
       <p-galleria [value]="bathImages" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}"
         [numVisible]="5" [showThumbnails]="false" [showIndicators]="false" [autoPlay]="true" [circular]="true"
         [transitionInterval]="5000">
@@ -67,8 +72,7 @@
           <h4 style="margin-top: 0rem; margin-bottom: 0rem; color: #ffffff;">Patios</h4>
         </ng-template>
       </p-galleria>
-    </div>
-  </div>
-</p-card>
+    </div> -->
+
 
 <!-- {{item.title}} -->
