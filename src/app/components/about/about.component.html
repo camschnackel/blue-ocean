@@ -1,32 +1,13 @@
-<!-- <mat-card>
-  <mat-card-header>
-    <mat-card-title><h1 class="mat-headline-2" appScrollSection="one">About</h1></mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <p>{{about}}</p>
-  </mat-card-content>
-</mat-card> -->
-
-<!-- <p-card header="About" styleClass="p-card-shadow" class="my-4 block" appScrollSection="one">
-    <ng-template pTemplate="header">
-        <img alt="Card" class="aboutImage" src="{{headerImg}}">
-    </ng-template>
-    <p>{{about}}</p>
-</p-card> -->
-
 <div class="grid grid-nogutter surface-section text-800" appScrollSection="one">
   <div class="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center ">
     <section>
-      <span class="block text-6xl font-bold mb-1">Create the space</span>
-      <div class="text-6xl txt-primary font-bold mb-3">your visitors deserve to see.</div>
-      <p class="mt-0 mb-4 text-700 line-height-3">Build the bathroom of your dreams, your own world class kitchen, or a room no one has even thought of yet.</p>
-
-      <!-- <button pButton pRipple label="Learn More" type="button" class="mr-3 p-button-raised"></button>
-      <button pButton pRipple label="Live Demo" type="button" class="p-button-outlined"></button> -->
+      <span class="block text-6xl font-bold mb-1">{{headerText.one}}</span>
+      <div class="text-6xl txt-primary font-bold mb-3">{{headerText.two}}</div>
+      <p class="mt-0 mb-4 text-700 line-height-3">{{headerText.three}}</p>
     </section>
   </div>
   <div class="col-12 md:col-6 overflow-hidden">
-    <img src="../../../assets/project-photos/images/header.jpg" alt="Image" class="md:ml-auto block md:h-full"
+    <img src="{{headerImg}}" alt="Image" class="md:ml-auto block md:h-full"
       style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%)">
   </div>
 </div>

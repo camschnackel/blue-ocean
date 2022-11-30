@@ -1,11 +1,7 @@
 <p-card appScrollSection="three" styleClass="p-card-shadow" class="my-4 block" header="Contact Us">
-  <!-- <div class="px-4 py-8 md:px-6 lg:px-8"> -->
   <div class="grid">
     <div class="col-12">
-      <!-- <div class="text-900 font-medium mb-4">Contact Us</div> -->
-      <!-- <div class="text-900 text-2xl font-bold mb-4">GET IN TOUCH</div> -->
-      <p class="text-700 line-height-3 pr-0 lg:pr-5">Cash offers from qualifying distressed and foreclosed homes, as
-        well as homes with underwater mortages.</p>
+      <p class="text-700 line-height-3 pr-0 lg:pr-5">{{contactDescription}}</p>
     </div>
     <div class="col-12 md:col-6 lg:col-6">
       <div class="flex align-items-start">
@@ -16,8 +12,8 @@
           </span>
         </div>
         <div>
-          <span class="text-2xl text-900 mb-2 font-medium">Luke Grothe</span>
-          <p class="text-700 line-height-3"><a href="tel:6127351458">(612) 735-1458</a></p>
+          <span class="text-2xl text-900 mb-2 font-medium">{{contact1.name}}</span>
+          <p class="text-700 line-height-3"><a href="tel:{{contact1.phone}}">{{contact1.phone}}</a></p>
         </div>
       </div>
     </div>
@@ -31,7 +27,7 @@
         </div>
         <div>
           <span class="text-2xl text-900 mb-2 font-medium">Email</span>
-          <p class="text-700 line-height-3"><a href="mailto:Lukegrothe@me.com">Lukegrothe@me.com</a></p>
+          <p class="text-700 line-height-3"><a href="mailto:{{contact1.email}}">{{contact1.email}}</a></p>
         </div>
       </div>
     </div>
@@ -44,12 +40,10 @@
           </span>
         </div>
         <div>
-          <span class="text-2xl text-900 mb-2 font-medium">Rich Faulhaber</span>
-          <p class="text-700 line-height-3"><a href="tel:6518083075">(651) 808-3075</a></p>
+          <span class="text-2xl text-900 mb-2 font-medium">{{contact2.name}}</span>
+          <p class="text-700 line-height-3"><a href="tel:{{contact2.phone}}">{{contact2.phone}}</a></p>
         </div>
       </div>
     </div>
   </div>
-  <!-- </div>
-  <img alt="Image" src="assets/images/blocks/contact/map.png" class="w-full"> -->
 </p-card>
