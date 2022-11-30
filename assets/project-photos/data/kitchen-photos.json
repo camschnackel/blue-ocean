@@ -1,0 +1,28 @@
+{
+  "data":[
+    {
+      "previewImageSrc": "assets/project-photos/images/kitchen1.jpg",
+      "thumbnailImageSrc": "assets/project-photos/images/kitchen1.jpg",
+      "alt": "TBD",
+      "title": "TBD"
+    },
+    {
+      "previewImageSrc": "assets/project-photos/images/kitchen2.jpg",
+      "thumbnailImageSrc": "assets/project-photos/images/kitchen2.jpg",
+      "alt": "TBD",
+      "title": "TBD"
+    },
+    {
+      "previewImageSrc": "assets/project-photos/images/kitchen3.jpg",
+      "thumbnailImageSrc": "assets/project-photos/images/kitchen3.jpg",
+      "alt": "TBD",
+      "title": "TBD"
+    },
+    {
+      "previewImageSrc": "assets/project-photos/images/kitchen4.jpg",
+      "thumbnailImageSrc": "assets/project-photos/images/kitchen4.jpg",
+      "alt": "TBD",
+      "title": "TBD"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "data":[
+    {
+      "previewImageSrc": "assets/project-photos/images/new-house1.jpg",
+      "thumbnailImageSrc": "assets/project-photos/images/new-house1.jpg",
+      "alt": "TBD",
+      "title": "TBD"
+    },
+    {
+      "previewImageSrc": "assets/project-photos/images/new-house2.jpg",
+      "thumbnailImageSrc": "assets/project-photos/images/new-house2.jpg",
+      "alt": "TBD",
+      "title": "TBD"
+    }
+  ]
+}
