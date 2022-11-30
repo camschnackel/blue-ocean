@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-  headerImg: string = '../../../assets/project-photos/images/header.jpg'
+  headerImg: string = '/assets/project-photos/images/header.jpg'
   headerText = {
     one: 'Create the space',
     two: 'your visitors deserve to see.',
