@@ -4,10 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration production --base-href=/blue-ocean/",
+    "build": "ng build --configuration production --base-href=/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "npx angular-cli-ghpages --dir=dist/blue-ocean --no-silent"
+    "deploy": "nph angular-cli-ghpages --dir=dist/blue-ocean --no-silent"
   },
   "private": true,
   "dependencies": {
