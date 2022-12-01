@@ -1,12 +1,27 @@
-<p-toolbar styleClass="secondary-toolbar" class="sticky-bar">
-    <div class="p-toolbar-group-left">
+<p-toolbar styleClass="secondary-toolbar" class="sticky-bar hidden sm:block md:block lg:block">
+  <div class="p-toolbar-group-left">
+    <p-image src="{{toolbarImg}}" alt="Image" width="250"></p-image>
+  </div>
+  <div class="p-toolbar-group-right">
+    <nav class="">
+      <button pButton type="button" class="p-button-text" appScrollAnchor="one" label="About"></button>
+      <button pButton type="button" class="p-button-text mx-2" appScrollAnchor="two" label="Projects"></button>
+      <button pButton type="button" class="p-button-text" appScrollAnchor="three" label="Contact"></button>
+    </nav>
+
+  </div>
+</p-toolbar>
+<p-toolbar styleClass="secondary-toolbar" class="sticky-bar block sm:hidden md:hidden lg:hidden xl:hidden">
+  <div class="grid">
+    <div class="col-12 justify-content-center align-content-center text-center w-full">
       <p-image src="{{toolbarImg}}" alt="Image" width="250"></p-image>
     </div>
-    <div class="p-toolbar-group-right">
-      <nav>
-        <button pButton class="p-button-text ml-2" appScrollAnchor="one" label="About"></button>
-        <button pButton class="p-button-text ml-2" appScrollAnchor="two" label="Projects"></button>
-        <button pButton class="p-button-text ml-2" appScrollAnchor="three" label="Contact"></button>
+    <div class="col-12 justify-content-center align-content-center text-center w-full">
+      <nav class="">
+        <button pButton type="button" class="p-button-text-sm" appScrollAnchor="one" label="About"></button>
+        <button pButton type="button" class="p-button-text-sm mx-1" appScrollAnchor="two" label="Projects"></button>
+        <button pButton type="button" class="p-button-text-sm" appScrollAnchor="three" label="Contact"></button>
       </nav>
     </div>
+  </div>
 </p-toolbar>
